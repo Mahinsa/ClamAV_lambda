@@ -1,0 +1,4 @@
+{"message":{"routes":[{"path":"/health","method":"get","handler":{"v1":[null]}},{"path":"/s3","method":"post","handler":{"v1":[[null,null],null]}}]},"level":"info"}
+{"message":"Server is running http://localhost:3000","level":"info"}
+{"message":{"routes":[{"path":"/health","method":"get","handler":{"v1":[null]}},{"path":"/s3","method":"post","handler":{"v1":[[null,null],null]}}]},"level":"info"}
+{"message":"Server is running http://localhost:3000","level":"info"}

@@ -1,0 +1,139 @@
+{
+<<<<<<< Updated upstream
+  "name": "lambda",
+  "version": "1.0.0",
+  "description": "Serverless webpack example using Typescript",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.736.0",
+    "bufferstream": "^0.6.2",
+    "clamscan": "^1.3.3",
+    "dynamodb-doc": "^1.0.0",
+    "request": "^2.88.2",
+    "source-map-support": "^0.5.10",
+    "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.17",
+    "@types/node": "^10.12.18",
+    "@types/serverless": "^1.72.5",
+    "fork-ts-checker-webpack-plugin": "^3.0.1",
+    "serverless-webpack": "^5.2.0",
+    "ts-loader": "^5.3.3",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.2.4",
+    "webpack": "^4.29.0",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "author": "The serverless webpack authors (https://github.com/elastic-coders/serverless-webpack)",
+  "license": "MIT"
+=======
+    "name": "user-service",
+    "version": "1.0.0",
+    "description": "User service",
+    "main": "server.ts",
+    "author": "Nithin Madhuranga <nithin@bambu.co>",
+    "scripts": {
+        "postinstall": "npx tsc",
+        "dev": "ts-node-dev --poll src/server.ts",
+        "build": "tsc",
+        "start": "npm run serve",
+        "serve": "node dist/server.js",
+        "test": "jest",
+        "test:watch": "jest --watchAll",
+        "test:coverage": "jest --coverage --verbose",
+        "lint": "tsc --noEmit && eslint 'src/**/*.{js,ts,tsx}' --quiet --fix --ignore-pattern 'dist/'",
+        "prettier:base": "prettier",
+        "prettier:check": "npm run prettier:base -- --list-different \"src/**/*.{ts,tsx}\"",
+        "prettier:write": "npm run prettier:base -- --write \"src/**/*.{ts,tsx}\""
+    },
+    "type": "module",
+    "license": "MIT",
+    "jest": {
+        "verbose": true,
+        "transform": {
+            "^.+\\.tsx?$": "ts-jest"
+        },
+        "roots": [
+            "<rootDir>/src"
+        ],
+        "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+        "moduleFileExtensions": [
+            "ts",
+            "tsx",
+            "js",
+            "jsx",
+            "json",
+            "node"
+        ]
+    },
+    "lint-staged": {
+        "**/*.ts": [
+            "eslint --fix",
+            "npm run prettier:write",
+            "git add"
+        ]
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "dependencies": {
+        "app-root-path": "^3.0.0",
+        "aws-sdk": "^2.742.0",
+        "axios": "^0.19.2",
+        "clamscan": "^1.3.3",
+        "compression": "^1.7.4",
+        "cors": "^2.8.5",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "express-session": "^1.17.1",
+        "express-validator": "^6.3.0",
+        "helmet": "^3.21.2",
+        "keycloak-admin": "^1.13.0",
+        "keycloak-connect": "^10.0.2",
+        "morgan": "^1.10.0",
+        "openid-client": "2.5.0",
+        "qs": "^6.9.4",
+        "serverless": "^1.80.0",
+        "serverless-express": "^2.0.11",
+        "serverless-webpack": "^5.3.4",
+        "shelljs": "^0.8.4",
+        "supertest": "^4.0.2",
+        "swagger-ui-express": "^4.1.2",
+        "urlencode": "^1.1.0",
+        "winston": "^3.3.3"
+    },
+    "devDependencies": {
+        "@types/app-root-path": "^1.2.4",
+        "@types/compression": "^1.0.1",
+        "@types/cors": "^2.8.6",
+        "@types/express": "^4.17.2",
+        "@types/express-session": "^1.17.0",
+        "@types/helmet": "^0.0.47",
+        "@types/jest": "^26.0.3",
+        "@types/morgan": "^1.9.1",
+        "@types/node": "^14.14.6",
+        "@types/qs": "^6.9.3",
+        "@types/supertest": "^2.0.8",
+        "@types/swagger-ui-express": "^4.1.0",
+        "@typescript-eslint/eslint-plugin": "^3.4.0",
+        "@typescript-eslint/parser": "^3.4.0",
+        "eslint": "^7.3.1",
+        "eslint-config-prettier": "^6.7.0",
+        "eslint-plugin-prettier": "^3.1.1",
+        "husky": "^4.2.5",
+        "jest": "^26.1.0",
+        "lint-staged": "^10.2.11",
+        "prettier": "^2.0.5",
+        "ts-jest": "^26.1.1",
+        "ts-node-dev": "^1.0.0-pre.49",
+        "tsc-watch": "^4.0.0",
+        "typescript": "^3.7.2"
+    }
+>>>>>>> Stashed changes
+}
